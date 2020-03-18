@@ -8,7 +8,7 @@ const Header = () => {
     const data = useStaticQuery(graphql`
         query{
             site{
-                siteMetaData{
+                siteMetadata{
                     title
                 }
             }
@@ -18,7 +18,7 @@ const Header = () => {
     return(
         <header className={ headerStyles.header}>
             <h1>
-    <Link to="/">{data.site.siteMetaData.title}</Link>
+    <Link to="/">{data.site.siteMetadata.title}</Link>
             </h1>
             <ul>
                 <li><Link to="/">Home</Link></li>
